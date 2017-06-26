@@ -1,0 +1,25 @@
+<div class = "container">
+  <div class = "col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+    <br>
+    <br>
+    <h4>以下の内容で、送信する。</h4>
+    <br>
+    <br>
+    <%= form_for(@message) do |f| %>
+      <%= f.hidden_field :name %>
+      <%= f.hidden_field :email %>
+      <%= f.hidden_field :content %>
+      <p>名前：<%= @message.name %></p>
+      <p>Eメール：<%= @message.email %></p>
+      <p>内容：<%= @message.content %></p>
+      <%= f.submit "送信",class:'btn btn-block' %>
+    <% end %>
+
+    <%= form_for(@message, url: new_message_path, method: 'get') do |f| %>
+      <%= f.hidden_field :name %>
+      <%= f.hidden_field :email %>
+      <%= f.hidden_field :content %>
+      <%= f.submit "もどる" , name:'back',class:'btn btn-default btn-block'%>
+    <% end %>
+  </div>
+</div>

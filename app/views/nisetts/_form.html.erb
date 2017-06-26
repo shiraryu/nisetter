@@ -1,0 +1,19 @@
+<%= form_for(@nisett,url:choose_new_or_edit) do |f| %>
+  <% if @nisett.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= @nisett.errors.count %>件のエラーがあります。</h2>
+        
+        <ul>
+        <% @nisett.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+  <%= f.label :"入力欄" %>
+  <%= f.text_field :content,class:'form-control' %>
+  <%= f.submit"投稿",class:'btn btn-block' %>
+<% end %>
+
+<%= link_to "投稿一覧", nisetts_path %>

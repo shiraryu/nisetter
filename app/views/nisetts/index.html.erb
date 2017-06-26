@@ -1,0 +1,60 @@
+<section class = "main-header">
+  <img src="<%= asset_path"nisetter_white.png" %>">
+</section>
+
+<section class = "body container-fluid">
+  <div class = "row">
+    <div class = "gridcell col-md-3">
+      <section class = "profile">
+        <img src="<%= asset_path"profileavatar.png" %>">
+        <h1>しらいし</h1>
+          <p>
+          制作課題実施中（似せッター）<br>
+          戸惑いながらもコツコツ制作<br>
+          </p>
+  　
+  　       <p>
+            愛媛在住
+          </p>
+      </section>
+    </div>
+    
+    <div class = "gridcell col-md-6">
+      <section class= "ichiran">
+        <%= render'nisetts/ichiran' %>
+      </section>
+    </div>
+    
+    <div class = "gridcell col-md-3 hidden-xs hidden-sm">
+      <section class="function">
+        <div class="function-images">
+          <div class = "row">
+          <div class="function-image">
+            <img src="<%= asset_path"icon.png" %>">
+            <p>モーメント</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="function-image">
+            <img src="<%= asset_path"icon.png" %>">
+            <p>通知</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="function-image">
+            <img src="<%= asset_path"icon.png" %>">
+            <p>友達つながり</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="function-image">
+            <img src="<%= asset_path"icon.png" %>">
+              <p>コメント投稿</p>
+          </div>
+          <div id="page-top-btn" class="page-top-btn">
+            <p><a class="move-page-top" id="move-page-top">▲</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+</section>

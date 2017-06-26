@@ -1,0 +1,15 @@
+<p id="notice"><strong><br><%= notice %></strong></p>
+<%= link_to "新規投稿" , new_nisett_path,class:'btn btn-default' %>
+<section class = "nisetts">
+  <div class = "row">
+    <br>
+    <% @nisetts.each do |nisett| %>
+      <div class = "nisett">
+        <p><%= nisett.content %></p>
+        <br>
+        <%= link_to "編集",edit_nisett_path(nisett.id),class:'btn btn-default btn-sm btn-success' %>
+        <%= link_to "削除", nisett_path(nisett.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn-danger' %>
+      </div>
+    <% end %>
+  </div>
+</section>
