@@ -35,17 +35,11 @@ header{
   }
 }
 @media (max-width: 767px) {
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: black;
     text-align: right;
     &:hover, &:focus {
       color: #696969;
-    }
-  }
-  .navbar-default .navbar-toggle {
-    background-color: transparent;
-    &:hover, &:focus {
-      background-color: transparent;
     }
   }
 }
