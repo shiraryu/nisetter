@@ -28,6 +28,7 @@ header{
   .navbar-nav > .open > a {
     background-color: transparent;
     color: black;
+    position:relative;z-index:2;
     &:hover, &:focus {
       background-color: transparent;
       color: #696969;
@@ -40,7 +41,6 @@ header{
     text-align: right;
     &:hover, &:focus {
       color: #696969;
-      text-align: right;
     }
   }
 }
