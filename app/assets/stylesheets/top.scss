@@ -28,11 +28,13 @@ header{
   .navbar-nav > .open > a {
     background-color: transparent;
     color: black;
-    position:relative;z-index:2;
     &:hover, &:focus {
       background-color: transparent;
       color: #696969;
     }
+  }
+  .dropdown{
+    position:relative;z-index:2;
   }
 }
 @media (max-width: 767px) {
