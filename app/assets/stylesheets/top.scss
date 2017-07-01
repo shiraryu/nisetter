@@ -33,14 +33,18 @@ header{
       color: #696969;
     }
   }
-  .dropdown{
+    .dropdown{
     position:relative;z-index:2;
+  }
+    a.dropdown-toggle{
+    padding-right: 0px;
   }
 }
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: black;
-    text-align: right;
+    text-align: center;
+    padding-left: 0px;
     &:hover, &:focus {
       color: #696969;
     }
